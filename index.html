@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Capybara Values</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #111;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: cyan;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+            margin-top: 20px;
+        }
+        section {
+            display: none;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+        img {
+            max-width: 400px;
+            margin-top: 20px;
+            border: 3px solid cyan;
+        }
+    </style>
+    <script>
+        function mostrarSeccion(id) {
+            document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+            <a href="#" onclick="mostrarSeccion('precios')">Precios</a>
+            <a href="#" onclick="mostrarSeccion('discord')">Discord</a>
+        </nav>
+    </header>
+
+    <h1>Capybara Values</h1>
+
+    <section id="inicio" class="active">
+        <p>Bienvenido a Capybara Values. Explora nuestras opciones.</p>
+    </section>
+
+    <section id="precios">
+        <p>Este modelo cuesta <strong>25 capybaras</strong>.</p>
+        <img src="torpedo.webp" alt="Auto deportivo naranja">
+    </section>
+
+    <section id="discord">
+        <p>Únete a nuestra comunidad en Discord.</p>
+        <a href="https://discord.gg/UMGKfHVpV" target="_blank" style="color:cyan;">Ir a Discord</a>
+    </section>
+</body>
+</html>
