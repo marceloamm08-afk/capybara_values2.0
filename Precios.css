@@ -1,0 +1,15 @@
+#precios {
+    display: flex;          /* Activa flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px;              /* Espacio entre cada modelo */
+}
+
+#precios .modelo {
+    text-align: center;     /* Centra texto e imagen dentro de cada bloque */
+}
+
+/* Opcional: estilo de las imágenes */
+#precios img {
+    border: 3px solid cyan; /* Borde decorativo */
+    /* No se fija tamaño, cada imagen conserva su tamaño original */
+}
