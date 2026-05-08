@@ -48,6 +48,7 @@ section.active {
 img {
     max-width: 200px;
     margin-top: 200px;
+    object-fit: cover;
     border: 2px solid cyan;
 }
 
