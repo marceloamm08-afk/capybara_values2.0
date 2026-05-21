@@ -50,7 +50,7 @@ section.active {
 img {
     max-width: 400px;
     margin-top: 20px;
-    border: 3px solid cyan;
+    border: 3px solid black; /* Borde negro para las imágenes */
 }
 
 .modelo {
@@ -60,52 +60,7 @@ img {
 }
 
 .modelo p {
-    color: yellow; /* Texto de precios en amarillo */
-    font-weight: bold;
-}
-
-.barra-globo {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: yellow;
-    text-align: center;
-    padding: 10px;
-    font-family: 'Chewy', cursive; /* También cartoon */
-}
-
-
-h1 {
-    color: black;
-    text-align: center;
-    margin-top: 20px;
-}
-
-section {
-    display: none;
-    text-align: center;
-    padding: 20px;
-}
-
-section.active {
-    display: block;
-}
-
-img {
-    max-width: 400px;
-    margin-top: 20px;
-    border: 3px solid cyan;
-}
-
-.modelo {
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
-}
-
-.modelo p {
-    color: yellow; /* Texto de precios en amarillo */
+    color: blue; /* Texto de precios en azul */
     font-weight: bold;
 }
 
