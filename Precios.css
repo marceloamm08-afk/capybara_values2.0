@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
 body {
-    font-family: 'Chewy', cursive;
-}
-
-body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Chewy', cursive; /* Fuente cartoon */
     background-image: url('fondopag.jpg');
     background-size: cover;
     background-position: center;
@@ -63,6 +59,11 @@ img {
     text-align: center;
 }
 
+.modelo p {
+    color: yellow; /* Texto de precios en amarillo */
+    font-weight: bold;
+}
+
 .barra-globo {
     position: fixed;
     bottom: 0;
@@ -71,4 +72,6 @@ img {
     background-color: yellow;
     text-align: center;
     padding: 10px;
+    font-family: 'Chewy', cursive;
 }
+
